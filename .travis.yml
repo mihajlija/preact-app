@@ -14,8 +14,6 @@ before_script:
 script:
   - preact build
 
-deploy:
-  - firebase deploy --token $FIREBASE_TOKEN --non-interactive
-
 after_success:
+  - firebase deploy --token $FIREBASE_TOKEN --non-interactive
   - npm run lh -- https://preact-a6240.firebaseapp.com/ --perf=100
