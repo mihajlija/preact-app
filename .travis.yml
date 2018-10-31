@@ -16,4 +16,5 @@ script:
 
 after_success:
   - firebase deploy --token $FIREBASE_TOKEN --non-interactive
-  - npm run lh -- --pwa=100 https://preact-a6240.firebaseapp.com 
+  - npm run lh -- https://preact-a6240.firebaseapp.com/ --perf=100
+

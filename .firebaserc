@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "preact-a6240"
+    "default": "preact-a6240",
+    "staging": "preact-a6240"
   }
 }
